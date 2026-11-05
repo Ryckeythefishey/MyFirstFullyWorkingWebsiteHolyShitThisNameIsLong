@@ -1,9 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-<title> Ubuntu rocks! </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich & mein Hobby</title>
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <style>
+        .spalten-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .spalte {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-<p> I'm running this webite while on <br> crack! </p>
-<b> Yeah! </b>
+    <header>
+        <h1>Über mich & mein Hobby</h1>
+        <nav>
+            <a href="#ueber-mich">Über mich</a>
+            <a href="#hobby">Mein Hobby</a>
+        </nav>
+        <main class="spalten-container">
+            <section id="ueber-mich" class="spalte">
+                <h2>Über mich</h2>
+                <p>Hallo! Mein Name ist David Mickel. Ich bin 15 Jahre alt und lebe in Ettingen. Ich habe eine Leidenschaft für Technologie und liebe es, neue Dinge zu lernen.</p>
+                <h3>Meine Informationen</h3>
+                <table>
+                    <tr>
+                        <th>Geburtsdatum</th>
+                        <td>19. Dezember 2010</td>
+                    </tr>
+                    <tr>
+                        <th>Wohnort</th>
+                        <td>Ettingen, Baselland</td>
+                    </tr>
+                    <tr>
+                        <th>Hobbys</th>
+                        <td>Videospiele spielen, Programmieren, Lesen</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="hobby" class="spalte">
+                <h2>Mein Hobby</h2>
+                <p>Mein Hobby ist Videospiele zu Spielen. Ich verbringe gerne Zeit damit, mit Freunden zusammen zu spielen und neue Spiele auszuprobieren. Es macht mir Spass, verschiedene Genres auszuprobieren und neue Herausforderungen anzunehmen. Ein paar von meinen Lieblingsspielen sind:</p>
+                
+                <ul>
+                    <li>Archipelago Multiworld Randomizer</li>
+                    <li>Minecraft</li>
+                    <li>Mario Odyssey</li>
+                    <li>Undertale & Deltarune</li>
+                </ul>
+            </section>
+        </main>
+    </header>
 </body>
 </html>
