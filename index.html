@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steckbrief David</title>
+    <link rel="icon" type="image/x-icon" href="images/v1.png">
+    <style>
+        .spalten-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .spalte {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .konami { 
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 100px;
+            opacity: 0.02;
+            z-index: 9999;
+            pointer-events: none; 
+        }
+    </style>
+    <script src="js/konami.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mein Steckbrief</h1>
+        <nav>
+            <a href="#ueber-mich">Über mich</a>
+            <a href="#hobby">Mein Hobby</a>
+            <a href="#Game Guides">Game Guides</a>
+        </nav>
+        <main class="spalten-container">
+            <section id="ueber-mich" class="spalte">
+                <h2>Über mich</h2>
+                <p>Hallo! Mein Name ist David Mickel. Ich bin 15 Jahre alt und lebe in Ettingen. Ich habe eine Leidenschaft für Technologie und liebe es, neue Dinge zu lernen.</p>
+                <h3>Meine Informationen</h3>
+                <table>
+                    <tr>
+                        <th>Geburtsdatum</th>
+                        <td>19. Dezember 2010</td>
+                    </tr>
+                    <tr>
+                        <th>Wohnort</th>
+                        <td>Ettingen, Baselland</td>
+                    </tr>
+                    <tr>
+                        <th>Hobbys</th>
+                        <td>Videospiele spielen, Lesen</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsfarbe</th>
+                        <td>Grün & Orange & Blau</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsessen</th>
+                        <td>Fischstäbchen mit Spinat und Kartoffeln, Pizza, Calamari</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsgetränk</th>
+                        <td>Cola, Guarana</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsmusikkünstler</th>
+                        <td>Camellia, T+Pazolite, Toby Fox</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsmusikgenre</th>
+                        <td>Symphonic Speed Metal, J-Core, Speedcore</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="hobby" class="spalte">
+                <h2>Mein Hobby</h2>
+                <p>Mein Hobby ist Videospiele zu Spielen. Ich verbringe gerne Zeit damit, mit Freunden zusammen zu spielen und neue Spiele auszuprobieren. Es macht mir Spass, verschiedene Genres auszuprobieren und neue Herausforderungen anzunehmen. Ein paar von meinen Lieblingsspielen sind:</p>
+                
+                <ul>
+                    <li>Archipelago Multiworld Randomizer</li>
+                    <li>Minecraft</li>
+                    <li>Mario Odyssey</li>
+                    <li>Undertale & Deltarune</li>
+                    <li>Terraria</li>
+                    <li>Hollow Knight</li>
+                    <li>Celeste</li>
+                    <li>Lingo 1 & 2</li>
+                    <li>Geometry Dash</li>
+                    <li>Ultrakill</li>
+                    <li>Incremental Spiele & Prestige Trees</li>
+                    <li>Rogue-Lite Spiele</li>
+                    <li>Zelda Spiele</li>
+                    <li>Und viele mehr!</li>
+                </ul>
+            </section>
+        </main>
+        <main class="spalten-container">
+            <section id="Game Guides" class="spalte">
+                <h2>Game Guides</h2>
+                <p>Ich habe einige Guides für Spiele verlinkt. (W.I.P)</p>
+                <ul>
+                    <li><a href="5 Hours.html">Hollow Knight 5 Hour Achievement Guide</a></li>
+                    <li><a href="https://archipelago.gg/tutorial/Archipelago/setup_en">Archipelago Multiworld Randomizer Setup Guide</a></li> ü
+                </ul>
+            </section>
+        </main>
+    </header>
+    <img src="images/konami.png" alt="Konami" class="konami">
+</body>
+</html>
