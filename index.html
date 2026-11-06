@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steckbrief David</title>
-    <link rel="icon" type="image/x-icon" href="images.png">
+    <link rel="icon" type="image/x-icon" href="images/v1.png">
     <style>
         .spalten-container {
             display: flex;
@@ -26,7 +26,17 @@
             padding: 10px;
             text-align: left;
         }
+        .konami { 
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 100px;
+            opacity: 0.02;
+            z-index: 9999;
+            pointer-events: none; 
+        }
     </style>
+    <script src="js/konami.js"></script>
 </head>
 <body>
     <header>
@@ -60,7 +70,7 @@
                     </tr>
                     <tr>
                         <th>Lieblingsessen</th>
-                        <td>Fishstäbchen mit Spinat und Kartoffeln, Pizza, Calamari</td>
+                        <td>Fischstäbchen mit Spinat und Kartoffeln, Pizza, Calamari</td>
                     </tr>
                     <tr>
                         <th>Lieblingsgetränk</th>
@@ -101,13 +111,14 @@
         <main class="spalten-container">
             <section id="Game Guides" class="spalte">
                 <h2>Game Guides</h2>
-                <p>Ich habe einige Guides für Spiele verlinkt.</p>
+                <p>Ich habe einige Guides für Spiele verlinkt. (W.I.P)</p>
                 <ul>
                     <li><a href="5 Hours.html">Hollow Knight 5 Hour Achievement Guide</a></li>
-                    <li><a href="https://archipelago.gg/tutorial/Archipelago/setup_en">Archipelago Multiworld Randomizer Setup Guide</a></li>
+                    <li><a href="https://archipelago.gg/tutorial/Archipelago/setup_en">Archipelago Multiworld Randomizer Setup Guide</a></li> ü
                 </ul>
             </section>
         </main>
     </header>
+    <img src="images/konami.png" alt="Konami" class="konami">
 </body>
 </html>
