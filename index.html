@@ -43,6 +43,12 @@
             z-index: 9999;
             pointer-events: none;
         }
+
+        @media (max-width: 600px) {
+            .spalten-container {
+                flex-direction: column;
+            }
+        }
     </style>
     <script src="js/konami.js"></script>
 </head>
@@ -56,7 +62,9 @@
             <a href="#Game Guides">Game Guides</a>
             <a href="#Socials">Socials</a>
         </nav>
-        <main class="spalten-container">
+    </header>
+    <main>
+        <div class="spalten-container">
             <section id="ueber-mich" class="spalte">
                 <h2>Über mich</h2>
                 <p>Hallo! Mein Name ist David Mickel. Ich bin 15 Jahre alt und lebe in Ettingen. Ich habe eine
@@ -69,11 +77,18 @@
                     </tr>
                     <tr>
                         <th>Wohnort</th>
-                        <td>Ettingen, Baselland, Schweiz, Europe, Earth, Solarsystem, Milkyway, Local Group, Virgo Supercluster, Laniakea Supercluster, Observable Universe, The Known Universe, Multiversum A3, Omniverse I6</td>
+                        <td>Ettingen, Baselland, Schweiz, Europe, Earth, Solarsystem, Milkyway, Local Group, Virgo
+                            Supercluster, Laniakea Supercluster, Observable Universe, The Known Universe, Multiversum
+                            A3,
+                            Omniverse I6</td>
                     </tr>
                     <tr>
                         <th>Hobbys</th>
-                        <td>Videospiele spielen, Lesen,</td>
+                        <td>Videospiele spielen, Lesen, Anime schauen</td>
+                    </tr>
+                    <tr>
+                        <th>Lieblingsanime</th>
+                        <td>One Piece, Jojos Bizarre Adventure, Jujutsu Kaisen, Dragon Ball, One Punch Man</td>
                     </tr>
                     <tr>
                         <th>Lieblingsfarbe</th>
@@ -85,7 +100,7 @@
                     </tr>
                     <tr>
                         <th>Lieblingsgetränk</th>
-                        <td>Cola, Guarana, Eistee,</td>
+                        <td>Cola, Guarana, Eistee </td>
                     </tr>
                     <tr>
                         <th>Lieblingsmusikkünstler</th>
@@ -100,13 +115,11 @@
                     neue Herausforderungen anzunehmen. Ein paar von meinen Lieblingsspielen sind:</p>
                 <ul>
                     <li>Archipelago Multiworld Randomizer</li>
-                    <li>Minecraft</li>
                     <li>Mario Odyssey</li>
                     <li>Undertale & Deltarune</li>
                     <li>Terraria</li>
                     <li>Hollow Knight</li>
                     <li>Celeste</li>
-                    <li>Reventure</li>
                     <li>Lingo 1 & 2</li>
                     <li>Geometry Dash</li>
                     <li>Ultrakill</li>
@@ -116,29 +129,39 @@
                     <li>Und viele mehr!</li>
                 </ul>
             </section>
-        </main>
-        <main class="spalten-container">
+        </div>
+        <div class="spalten-container">
             <section id="Game Guides" class="spalte">
                 <h2>Game Guides</h2>
-                <p>Ich habe einige Guides für Spiele verlinkt. (W.I.P)</p>
+                <p>Ich habe einige Links für Spiele verlinkt.s</p>
                 <ul>
                     <li><a href="5 Hours.html">Hollow Knight 5 Hour Achievement Guide</a></li>
-                    <li><a href="https://archipelago.gg/tutorial/Archipelago/setup_en" target="_blank" rel="noopener noreferrer">Archipelago Multiworld Randomizer Setup Guide</a></li>
+                    <li><a href="https://archipelago.gg" target="_blank" rel="noopener noreferrer">Archipelago
+                            Multiworld
+                            Randomizer</a></li>
+                    <li><a href="https://galaxy.click" target="_blank" rel="noopener noreferrer">Incremental Spiele</a>
+                    </li>
+                    <li><a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer">Steam</a></li>
                 </ul>
             </section>
             <section id="Socials" class="spalte">
                 <h2>Socials</h2>
                 <p>Hier sind meine Social Media Links:</p>
                 <ul>
-                    <li><a href="https://www.youtube.com/@ryckeythefishey" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://www.twitch.tv/ryckeythefishey" target="_blank" rel="noopener noreferrer">Twitch</a></li>
-                    <li><a href="https://steamcommunity.com/profiles/76561198017179638/" target="_blank" rel="noopener noreferrer">Steam</a></li>
-                    <li><a href="https://github.com/Ryckeythefishey" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="https://x.com/ryckeythef40955" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/@ryckeythefishey" target="_blank"
+                            rel="noopener noreferrer">YouTube</a></li>
+                    <li><a href="https://www.twitch.tv/ryckeythefishey" target="_blank"
+                            rel="noopener noreferrer">Twitch</a></li>
+                    <li><a href="https://steamcommunity.com/profiles/76561198017179638/" target="_blank"
+                            rel="noopener noreferrer">Steam</a></li>
+                    <li><a href="https://github.com/Ryckeythefishey" target="_blank"
+                            rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://x.com/ryckeythef40955" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
                 </ul>
             </section>
-        </main>
-    </header>
+        </div>
+    </main>
     <img src="images/konami.png" alt="Konami" class="konami">
 </body>
 
