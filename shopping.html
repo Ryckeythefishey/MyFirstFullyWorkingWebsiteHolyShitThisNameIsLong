@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="icon" type="image/x-icon" href="images/v1.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .konami {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 100px;
+            opacity: 0.03;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #000000;
+        }
+
+        .checklist-container {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #item-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn-add {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-add:hover {
+            background-color: #218838;
+        }
+
+        .btn-clear {
+            background-color: #dc3545;
+            color: white;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn-clear:hover {
+            background-color: #c82333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .btn-delete {
+            background-color: transparent;
+            color: #dc3545;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+
+        .btn-delete:hover {
+            color: #a71d2a;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5px;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+        .item-text {
+            flex: 1;
+            font-size: 16px;
+            color: #333;
+            transition: all 0.2s ease;
+            word-break: break-word;
+        }
+
+        .home {
+            left: 15px;
+            bottom: 15px;
+            position: fixed;
+        }
+
+        .completed .item-text {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+    </style>
+    <script src="js/konami.js"></script>
+</head>
+
+<body>
+    <div class="checklist-container">
+        <h2>My Checklist</h2>
+
+        <div class="input-group">
+            <input type="text" id="item-input" placeholder="Add new item..." autocomplete="off">
+            <button class="btn btn-add" id="add-btn">Add</button>
+        </div>
+
+        <ul id="checklist">
+        </ul>
+
+        <button class="btn btn-clear" id="clear-checked-btn">Clear Completed</button>
+    </div>
+    <script src="js/shopping.js"></script>
+    <div class="home">
+        <button>
+            <a href="index.html">
+                Back to Main Page
+            </a>
+        </button>
+    </div>
+</body>
