@@ -19,7 +19,7 @@ var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 
 var konamiCodePosition = 0;
 
 // add keydown event listener
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
   // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode];
   // get the value of the required key from the konami code
@@ -42,13 +42,20 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-    var newTab = window.open("./video/its MARIO.mp4", "_blank");
-    
-    // Falls der Browser das automatische Abspielen blockiert, 
-    // stellt dieser alternative Code sicher, dass es im Vollbild läuft:
-    if (newTab) {
-        newTab.focus();
-    } else {
-        alert("Bitte erlaube Pop-ups für diese Website, damit der Cheat funktioniert!");
-    }
+  var newTab = window.open("./video/its MARIO.mp4", "_blank");
+
+  if (newTab) {
+    newTab.focus();
+    newTab.onload = function () {
+      newTab.document.title = "I'ts Mario";
+    };
+    setTimeout(function () {
+      if (newTab.document) {
+        newTab.document.title = "I'ts Mario";
+      }
+    }, 200);
+
+  } else {
+    alert("Bitte erlaube Pop-ups für diese Website, damit der Cheat funktioniert!");
+  }
 }
