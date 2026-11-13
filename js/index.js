@@ -15,7 +15,7 @@ console.log(
 );
 
 console.log(
-  "Type  %csecretAudio.play()%c  and press Enter to find the ONE PIECE!", 
+  "Type  %csecretAudio.play()%c  and press Enter", 
   "color: red; font-weight: bold; font-size: 14px;", 
   "color: inherit; font-weight: normal;"
 );
