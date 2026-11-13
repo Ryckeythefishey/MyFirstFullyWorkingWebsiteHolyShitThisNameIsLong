@@ -56,6 +56,6 @@ function activateCheats() {
     }, 200);
 
   } else {
-    alert("Bitte erlaube Pop-ups für diese Website, damit der Cheat funktioniert!");
+    alert("pls allow popups :(");
   }
 }
